@@ -2,3 +2,4 @@ aiofiles
 aiohttp
 jinja2
 pytest
+uvicorn
