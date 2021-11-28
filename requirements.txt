@@ -1,5 +1,5 @@
+aiohttp==3.8.1
 aiofiles
-aiohttp
+pytest==6.2.5
+starlette==0.17.1
 jinja2
-pytest
-uvicorn
