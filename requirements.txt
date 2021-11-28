@@ -1,1 +1,4 @@
-aiofiles==3.7.2
+aiofiles
+aiohttp
+jinja2
+pytest
