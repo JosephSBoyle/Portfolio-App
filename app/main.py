@@ -1,11 +1,10 @@
-from typing import DefaultDict
 from starlette.applications import Starlette
 from starlette.responses import JSONResponse
 from starlette.routing import Mount, Route
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from lichess import get_current_lichess_ratings
+from lichess import get_current_lichess_ratings 
 from dataclasses import dataclass
 
 
@@ -21,8 +20,9 @@ class Role:
     title: str
     company: Company
     bullets: tuple[str]
-    start: str # e.g Jan 2021
-    end: str # e.g Feb 2021
+    start: str  # e.g Jan 2021
+    end: str  # e.g Feb 2021
+
 
 """Companies"""
 BLACK_COW = Company(
@@ -47,7 +47,7 @@ SOFTWARE_ENG = Role(
         "Containerizing cutting-edge multiplayer servers using Docker",
     ),
     "October 2021",
-    "Present"
+    "Present",
 )
 JR_SOFTWARE_ENG = Role(
     "Jr. Software Engineer",
@@ -58,7 +58,7 @@ JR_SOFTWARE_ENG = Role(
         "Designing and producing elegant and pragmatic solutions to meet evolving business needs",
     ),
     "January 2021",
-    "October 2021"
+    "October 2021",
 )
 
 
