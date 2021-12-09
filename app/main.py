@@ -2,6 +2,7 @@ from starlette.applications import Starlette
 from starlette.routing import Mount, Route
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
+from content.contact_details import BUSINESS_EMAIL, MOBILE_NUMBER
 
 from lichess import get_current_lichess_ratings
 from content.role_history import ROLES
@@ -17,6 +18,10 @@ async def homepage(request):
             "context": {
                 "roles": ROLES,
                 "lichess_classical_rating": await get_current_lichess_ratings(),
+                "contact_details": {
+                    "mobile_number": MOBILE_NUMBER,
+                    "business_email": BUSINESS_EMAIL,
+                },
             },
         },
     )
