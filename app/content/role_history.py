@@ -32,8 +32,8 @@ ZENDBOX = Company(
 
 QMUL = Company(
     "Queen Mary, University of London",
+    "qmul-logo.png",
     "https://www.qmul.ac.uk/",
-    "qmul-white.svg"
 )
 """Roles"""
 
