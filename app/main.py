@@ -6,6 +6,7 @@ from content.contact_details import BUSINESS_EMAIL, MOBILE_NUMBER
 
 from lichess import get_current_lichess_ratings
 from content.role_history import ROLES
+from content.who_am_i import WHO_AM_I
 
 templates = Jinja2Templates(directory="templates")
 
@@ -16,6 +17,7 @@ async def homepage(request):
         {
             "request": request,
             "context": {
+                "who_am_i": WHO_AM_I,
                 "roles": ROLES,
                 "lichess_classical_rating": await get_current_lichess_ratings(),
                 "contact_details": {

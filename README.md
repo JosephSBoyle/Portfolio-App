@@ -1,3 +1,9 @@
+## Running with python
+
+```bash
+$ ./do
+```
+## Running with Docker
 ### Setting up the dockerfile
 ```$ docker build -t portfolio-app .```
 

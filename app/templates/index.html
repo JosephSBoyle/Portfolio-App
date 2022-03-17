@@ -89,33 +89,19 @@
           <div class="mdl-card mdl-cell mdl-cell--12-col">
             <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
               <h4 class="mdl-cell mdl-cell--12-col">Who Am I?</h4>
+              {% for subsection in context.who_am_i %}
               <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                 <div class="section__circle-container__circle mdl-color--primary"></div>
               </div>
               <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                <h5>As a professional:</h5>
-                I am a deep thinker with a keen interest in software design and best practices.
-                My favourite book is Test-Driven-Development By Example, by Kent Beck.
+                <h5>{{ subsection.header }}</h5>
+                {{ subsection.content }}
               </div>
-              <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                <div class="section__circle-container__circle mdl-color--primary"></div>
-              </div>
-              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                <h5>As an individual:</h5>
-                I'm a thoughtful individual and I enjoy spirited discussions on topics ranging from current events and history to
-                philosophy and the social sciences.
-              </div>
-              <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                <div class="section__circle-container__circle mdl-color--primary"></div>
-              </div>
-              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                <h5>My Values</h5>
-                The qualities I most admire in people are: integrity, kindness and conscientiousness.
-              </div>
+              {% endfor %}
             </div>
           </div>
         </section>
-        
+
         {% for role in context.roles %}
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
           <header
@@ -219,7 +205,7 @@
               </p>
               <p>
                 One of my greatest honours was being invited to perform at a friends' wedding, where I performed some of
-                my favourite repotoire from the famous Bach cello suites.
+                my favourite repertoire from the famous Bach cello suites.
               </p>
             </div>
           </div>
@@ -244,9 +230,9 @@
               <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                 <h5>Personal phone number:</h5>
                 {{ context["contact_details"]["mobile_number"] }}
-            </div>
+              </div>
 
-          </div>
+            </div>
         </section>
       </div>
       <footer class="mdl-mega-footer">
