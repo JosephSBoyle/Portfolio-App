@@ -2,5 +2,5 @@ aiohttp==3.8.1
 aiofiles
 pytest==6.2.5
 starlette==0.17.1
-jinja2
-uvicorn
+jinja2==3.1.2
+uvicorn==0.17.6
