@@ -10,7 +10,8 @@ class SubSection:
 professional = SubSection(
     "As a professional:",
     "I'm a deep thinker with a keen interest in good design and best practices.\
-        Currently my favourite book is TDD by example, by Kent Beck.",
+        Currently my favourite book is TDD by example, by Kent Beck. \
+            I'm constantly looking to challenge myself and expand my talents in collaborative settings.",
 )
 
 personal = SubSection(
@@ -20,7 +21,7 @@ personal = SubSection(
 )
 values = SubSection(
     "My values:",
-    "The qualities I most admire in people are integrity, kindness and conscientiousness",
+    "The qualities I most admire are integrity, kindness and thoughtfulness.",
 )
 
 WHO_AM_I = professional, personal, values

@@ -34,6 +34,8 @@ starlette = Technology(
 flask = Technology(
     backend_framework,
     "Flask",
-    """Flask was my initial entrypoint into web-development. Flask prides itsself on a very 'hands-off', un-opinionated approach that contrasts sharply with some of it's contemporaries like Django.""",
-    """I'm grateful that I started with Flask because it gave me the opportunity to mistakes that perhaps another framework wouldn't have. Those mistakes taught me the value of a lot of the web-development design-patterns and best practices that I swear by today.""",
+    """Flask was my initial entrypoint into web-development. Flask prides itsself on a very 'hands-off',
+     un-opinionated approach that contrasts sharply with some of it's contemporaries like Django.""",
+    """I'm grateful that I started with Flask because it gave me the opportunity to mistakes that perhaps another framework wouldn't have.
+     Those mistakes taught me the value of a lot of the web-development design-patterns and best practices that I swear by today.""",
 )

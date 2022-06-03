@@ -1,2 +1,2 @@
-MOBILE_NUMBER: str = "07465 423 416"
+MOBILE_NUMBER: str = "<hidden>"
 BUSINESS_EMAIL: str = "joespartacusboyle@gmail.com"
